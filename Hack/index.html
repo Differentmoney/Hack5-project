@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+​
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-amber.min.css" />
+
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style type="text/css">
+            #body{
+            margin: auto;
+ 
+            height:60px;
+            width: 60%;
+
+        }
+        #editor {
+
+            height:100%;
+            width: 100%; /*
+            padding-left: 350px;
+          padding-right: 350px;*/
+        }
+
+        @media screen and (min-width: 1280px) {
+
+            .page-content {
+
+                margin: 0 15%;
+
+            }
+
+        }
+
+​
+
+        .demo-card-wide {
+
+            width: 100%;
+
+            margin-bottom: 10px;
+
+        }
+
+​
+
+        .demo-card-wide>.mdl-card__title {
+
+            color: #fff;
+
+            height: 75px;
+
+        }
+
+​
+
+        .demo-card-wide .mdl-card__title-text {
+
+            font-weight: bold;
+
+            font-size: 2.5em;
+
+        }
+
+​
+
+        .demo-card-wide .mdl-card__supporting-text {
+
+            font-size: 1.10em;
+
+            color: rgba(75, 75, 75, 1.0);
+
+        }
+
+​
+
+        .demo-card-wide>.mdl-card__menu {
+
+            color: #fff;
+
+        }
+
+    </style>
+
+</head>
+
+​
+
+<body>
+
+    <!-- The drawer is always open in large screens. The header is always 
+
+            shown, even in small screens. -->
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+
+        <header class="mdl-layout__header">
+
+            <!-- Top row, always visible -->
+
+            <div class="mdl-layout__header-row">
+
+                <!-- Title -->
+
+                <span class="mdl-layout-title">Welcome!</span>
+
+            </div>
+
+            <!-- Tabs -->
+
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+
+                <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Home</a>
+
+                <a href="#scroll-tab-2" class="mdl-layout__tab">To Do</a>
+
+                <a href="#scroll-tab-3" class="mdl-layout__tab">Goals and Habits</a>
+
+                <a href="#scroll-tab-4" class="mdl-layout__tab">Settings</a>
+
+            </div>
+
+        </header>
+
+        <div class="mdl-layout__drawer">
+
+            <span class="mdl-layout-title">HTML5 Tutorial</span>
+
+            <nav class="mdl-navigation">
+
+                <a class="mdl-navigation__link" href="">Dashboard</a>
+
+                <a class="mdl-navigation__link" href="">About</a>
+
+            </nav>
+
+        </div>
+
+        <main class="mdl-layout__content">
+
+            <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+
+                <div class="page-content">
+
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+                        <div class="mdl-card__title" style="background: linear-gradient( rgba(0, 0, 0, 0), 
+
+            													rgba(0, 0, 0, 0.5) ),
+
+                                                                url('https://picsum.photos/800/300') center bottom / cover;
+
+                                                                height: 300px;">
+
+                            <div class="mdl-card__title-text">
+
+                                <div id="quoteDisplay">
+
+                                </div>
+
+                                <script src="randomQuote.js"></script>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mdl-card__actions mdl-card--border">
+
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+
+                                I'm inspired!
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+                        <div class="mdl-card__title" style="background: linear-gradient( rgba(0, 0, 0, 0), 
+
+            													rgba(0, 0, 0, 0.5) ),
+
+            													url('https://picsum.photos/seed/pic/800/300') center bottom / cover;">
+
+                            <h2 class="mdl-card__title-text">To Do</h2>
+
+                        </div>
+
+                        <div class="mdl-card__supporting-text">
+
+                            <div id="quoteDisplay">
+
+                            </div>
+
+                            <script src="randomQuote.js"></script>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+
+                <div class="page-content">
+
+                </div>
+
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+
+                <div class="page-content">
+                    <div id="body" >
+                        <input type="checkbox"> 
+                        <textarea placeholder="Enter here" id="editor"  rows="3" cols="40" style="background-color:royalblue ;"> </textarea>
+                        <br>
+                        <input type="checkbox" >  
+                        <textarea placeholder="Enter here" id="editor" rows="3" cols="40"  style="background-color:palegreen"> </textarea>
+                        <br>
+                        <input type="checkbox" > 
+                        <textarea placeholder="Enter here" id="editor" rows="3" cols="40"  style="background-color:paleturquoise;"> </textarea>
+                        <br>
+                        <input type="checkbox" > 
+                        <textarea placeholder="Entr here" id="editor" rows="3" cols="40"  style="background-color:plum;"> </textarea>
+                        <br>
+                        <input type="checkbox" >  
+                        <textarea placeholder="Enter here" id="editor" rows="3" cols="40"  style="background-color:navajowhite ;"> </textarea>
+                        </div>
+                </div>
+
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+
+                <div class="page-content"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+​
+
+</html>
+

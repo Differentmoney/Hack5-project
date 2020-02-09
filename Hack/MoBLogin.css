@@ -1,0 +1,60 @@
+
+
+body {
+
+    font-family: 'Darker Grotesque', sans-serif;
+
+    font-size: 20px;
+
+}
+
+​
+
+#login {
+
+    background-color: lavenderblush;
+
+    text-align: center;
+
+    border: 2px solid grey;
+
+    display: inline-block;
+
+}
+
+​
+
+#cancelBtn, #remember {
+
+    float: left;
+
+}
+
+​
+
+#loginBtn, #forgot {
+
+    float: right;
+
+}
+
+​
+
+.default form {
+
+    float: right;
+
+}
+
+​
+
+.modal {
+
+    display: none; /* Hidden by default */
+
+    position: fixed; /* Stay in place */
+
+    z-index: 1; /* Sit on top */
+
+  }
+

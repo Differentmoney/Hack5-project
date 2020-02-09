@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+
+        Make or Break Login
+
+    </title>
+
+    ​
+
+    <link rel="stylesheet" type="text/css" href="MoBLogin.css">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Darker+Grotesque|Marmelad|Offside|Poiret+One|Thasadith&display=swap"
+        rel="stylesheet" href="MoBLogin.css">
+
+    ​
+
+</head>
+
+<body>
+
+    <form action="MoBHome.html">
+
+        ​
+
+        <div class="default">
+
+            <form>
+
+                <button type="text" id="signUp">Sign Up!</button>
+
+                <button onclick="document.getElementById('login').style.display='block'"
+                    style="width:auto;"><b>Login</b></button>
+
+            </form>
+
+        </div>
+
+        ​
+
+        <div id="login" class="modal">
+
+            <label for="uname"><b>Username:</b></label>
+
+            <input type="text" placeholder="Username" name="username" id="uname" required autofocus>
+
+
+
+            <br>
+
+            ​
+
+            <label for="psw"><b>Password:</b></label>
+
+            <input type="password" placeholder="Password" name="password" id="psw" required>
+
+
+
+            <br>
+
+            ​
+
+            <button type="button" id="cancelBtn">Cancel</button>
+
+            <button type="submit" id="loginBtn">Login</button>
+
+            ​
+
+            <br>
+
+            ​
+
+            <input type="checkbox" id="remember" checked="checked" name="remember">
+
+            <label for="remember" id="remember">Remember me</label>
+
+            ​
+
+            <a id="forgot" href="#">Forgot password?</a>
+
+        </div>
+
+        ​
+
+        <script>
+
+            // Get the modal
+
+            var modal = document.getElementById('login');
+
+            // When the user clicks anywhere outside of the modal, close it
+
+            window.onclick = function (event) {
+
+                if (event.target == modal) {
+
+                    modal.style.display = "none";
+
+                }
+
+            }
+
+        </script>
+
+    </form>
+
+</body>
+
+</html>
